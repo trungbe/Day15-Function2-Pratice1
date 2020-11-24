@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let arr1 = ['Polaris', ' Aldebaran', 'Deneb', 'Vega', ' Altair', 'Dubhe', 'Regulus']
+    let arr2 = ['Ursa Minor', ' Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', ' Leo']
+    let input = prompt("Nhập ngôi sao");
+
+    function checkStart() {
+        for (let i = 0; i < arr1.length; i++) {
+            if (input == arr1[i]) {
+                return alert('Tìm thấy chòm sao là:  ' + arr2[i] )
+            }
+        }
+        alert('Không tìm thấy ngôi sao nào')
+    }
+
+   checkStart()
+</script>
+</body>
+</html>
